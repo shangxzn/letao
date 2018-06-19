@@ -8,6 +8,7 @@
   <title>二级分类</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="lib/nprogress/nprogress.css">
+  <link rel="stylesheet" href="lib/bootstrap-validator/css/bootstrapValidator.css">
   <link rel="stylesheet" href="css/common.css">
 </head>
 
@@ -69,10 +70,40 @@
         <li class="active">二级分类</li>
       </ol>
 
-      <!-- 内容区域 -->
-      <div class="content">111</div>
 
+
+      <!-- 内容区域 -->
+      <div class="content">
+
+        <button class="btn btn-default mb_20 btn_add">添加分类</button>
+
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <td width="10%">序号</td>
+              <td width="30">一级分类名称</td>
+              <td width="30">二级分类名称</td>
+              <td width="30">二级分类LOGO</td>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!--  -->
+
+          </tbody>
+        </table>
+
+        <!-- 分页功能 -->
+        <div class="text-right">
+          <ul id="paginator"></ul>
+        </div>
+
+      </div>
     </div>
+  </div>
+
+
+  </div>
 
 
 
@@ -103,10 +134,31 @@
   </div>
 
 
+
+  <script type="text/html" id="tpl">
+  
+    {{each rows v i}}
+    <tr>
+      <td>{{(page-1)*size + i+1}}</td>
+        <td>{{v.categoryName}}</td>
+        <td>{{v.brandName}}</td>
+      <td>
+        <img width="50" height="50" src="{{v.brandLogo?v.brandLogo:'images/none.png'}}" alt="">
+      </td>
+    </tr>
+    {{/each}}
+  
+  </script>
+
+
   <script src="lib/jquery/jquery.js"></script>
   <script src="lib/bootstrap/js/bootstrap.js"></script>
   <script src="lib/nprogress/nprogress.js"></script>
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/bootstrap-paginator/bootstrap-paginator.js"></script>
+  <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
   <script src="js/common.js"></script>
+  <script src="js/second.js"></script>
 </body>
 
 </html>
