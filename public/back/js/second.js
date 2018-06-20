@@ -54,6 +54,10 @@ $(function () {
   });
 
 
+  $('.dropdown-menu').on('click', 'a' function () {
+    
+  });
+
 
 
 });

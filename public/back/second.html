@@ -209,6 +209,13 @@
   </script>
 
 
+  <script type="text/html" id="tpl2">
+    {{each rows v i}}
+    <li><a data-id="{{v.id}}" tabindex="-1" href="#">{{v.categoryName}}</a></li>
+    {{/each}}
+  </script>
+
+
   <script src="lib/jquery/jquery.js"></script>
   <script src="lib/bootstrap/js/bootstrap.js"></script>
   <script src="lib/nprogress/nprogress.js"></script>
