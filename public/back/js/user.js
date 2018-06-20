@@ -41,6 +41,8 @@ $(function () {
     $("#userModal").modal("show");
 
     var id = $(this).parent().data("id");// parent()这是找父元素的
+    // 为什么要存这个id 是因为后端要这个id  也可以理解为因为要禁用还是启用都需要这个id来跟后端交互的
+    // 固定的，后端要这个id，没有为什么，因为要禁用还是启用都需要这个id来跟后端交互的，我们要跟后台交互必须得存这个id
 
     //取决于点的是启用按钮还是禁用按钮
     var isDelete = $(this).hasClass('btn-success') ? 1 : 0;
