@@ -9,19 +9,25 @@ html,body {
   list-style: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 
 
 .lt_container {
   width: 100%;
   height: 100%;
-  max-width: 640px;
-  min-width: 320px;
-  background-color: pink;
+  max-width: 620px;
+  min-width: 340px;
+  /* background-color: pink; */
   margin: 0 auto;
   position: relative;
   padding-top: 45px;
   padding-bottom: 55px;
-  /* overflow: hidden; */
+  overflow: hidden;
+  /* 以防止有滚动条的发生 */
 }
 
 .lt_header {
@@ -95,5 +101,5 @@ html,body {
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
