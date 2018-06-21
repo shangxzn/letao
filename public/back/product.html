@@ -143,7 +143,7 @@
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <h4 class="modal-title">添加分类</h4>
+          <h4 class="modal-title">添加商品</h4>
         </div>
         <form>
           <div class="modal-body">
@@ -151,8 +151,8 @@
             <div class="form-group">
               <!-- 这是隐藏域 -->
               <input type="hidden" name="brandId">
-              <!-- 因为hot是必传的，就写死了1 -->
-              <input type="hidden" name="hot" value="1">
+              
+              <input type="hidden" name="statu" value="1">
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                   <span class="dropdown-text">请选择二级分类</span>
@@ -203,10 +203,11 @@
 
             <div class="form-group">
               <div class="img_box">
+                <!-- <img src="images/none.png" width="100" alt="">
                 <img src="images/none.png" width="100" alt="">
                 <img src="images/none.png" width="100" alt="">
-                <img src="images/none.png" width="100" alt="">
-                <input type="hidden" name="brandLogo">
+                <input type="hidden" name="brandLogo"> -->
+                <input type="hidden" name="tips">
               </div>
             </div>
           </div>
